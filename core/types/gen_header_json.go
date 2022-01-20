@@ -32,7 +32,7 @@ func (h Header) MarshalJSON() ([]byte, error) {
 		MixDigest   common.Hash    `json:"mixHash"`
 		Nonce       BlockNonce     `json:"nonce"`
 		BaseFee     *hexutil.Big   `json:"baseFeePerGas" rlp:"optional"`
-		Hash        common.Hash    `json:"hash"`
+		QtumHash    common.Hash    `json:"hash"`
 	}
 	var enc Header
 	enc.ParentHash = h.ParentHash
@@ -51,7 +51,7 @@ func (h Header) MarshalJSON() ([]byte, error) {
 	enc.MixDigest = h.MixDigest
 	enc.Nonce = h.Nonce
 	enc.BaseFee = (*hexutil.Big)(h.BaseFee)
-	enc.Hash = h.Hash()
+	enc.QtumHash = h.QtumHash
 	return json.Marshal(&enc)
 }
 
@@ -74,6 +74,7 @@ func (h *Header) UnmarshalJSON(input []byte) error {
 		MixDigest   *common.Hash    `json:"mixHash"`
 		Nonce       *BlockNonce     `json:"nonce"`
 		BaseFee     *hexutil.Big    `json:"baseFeePerGas" rlp:"optional"`
+		QtumHash   *common.Hash    `json:"hash"`
 	}
 	var dec Header
 	if err := json.Unmarshal(input, &dec); err != nil {
@@ -130,7 +131,10 @@ func (h *Header) UnmarshalJSON(input []byte) error {
 	if dec.Extra == nil {
 		return errors.New("missing required field 'extraData' for Header")
 	}
-	h.Extra = *dec.Extra
+	if dec.QtumHash == nil {
+		return errors.New("missing required field 'hash' for Header")
+	}
+	h.QtumHash = *dec.QtumHash
 	if dec.MixDigest != nil {
 		h.MixDigest = *dec.MixDigest
 	}
