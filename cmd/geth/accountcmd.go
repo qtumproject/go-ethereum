@@ -20,11 +20,11 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"github.com/ethereum/go-ethereum/accounts"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/log"
+	"github.com/qtumproject/go-ethereum/accounts"
+	"github.com/qtumproject/go-ethereum/accounts/keystore"
+	"github.com/qtumproject/go-ethereum/cmd/utils"
+	"github.com/qtumproject/go-ethereum/crypto"
+	"github.com/qtumproject/go-ethereum/log"
 	"gopkg.in/urfave/cli.v1"
 )
 

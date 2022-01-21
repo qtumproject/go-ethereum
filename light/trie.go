@@ -21,14 +21,14 @@ import (
 	"errors"
 	"fmt"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/qtumproject/go-ethereum/common"
+	"github.com/qtumproject/go-ethereum/core/rawdb"
+	"github.com/qtumproject/go-ethereum/core/state"
+	"github.com/qtumproject/go-ethereum/core/types"
+	"github.com/qtumproject/go-ethereum/crypto"
+	"github.com/qtumproject/go-ethereum/ethdb"
+	"github.com/qtumproject/go-ethereum/rlp"
+	"github.com/qtumproject/go-ethereum/trie"
 )
 
 var (

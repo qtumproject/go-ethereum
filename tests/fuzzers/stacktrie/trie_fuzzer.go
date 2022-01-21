@@ -25,9 +25,9 @@ import (
 	"io"
 	"sort"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/ethdb"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/qtumproject/go-ethereum/common"
+	"github.com/qtumproject/go-ethereum/ethdb"
+	"github.com/qtumproject/go-ethereum/trie"
 	"golang.org/x/crypto/sha3"
 )
 

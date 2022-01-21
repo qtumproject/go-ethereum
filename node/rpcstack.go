@@ -29,8 +29,8 @@ import (
 	"sync"
 	"sync/atomic"
 
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rpc"
+	"github.com/qtumproject/go-ethereum/log"
+	"github.com/qtumproject/go-ethereum/rpc"
 	"github.com/rs/cors"
 )
 

@@ -27,17 +27,17 @@ import (
 
 	"gopkg.in/urfave/cli.v1"
 
-	"github.com/ethereum/go-ethereum/accounts/external"
-	"github.com/ethereum/go-ethereum/accounts/keystore"
-	"github.com/ethereum/go-ethereum/accounts/scwallet"
-	"github.com/ethereum/go-ethereum/accounts/usbwallet"
-	"github.com/ethereum/go-ethereum/cmd/utils"
-	"github.com/ethereum/go-ethereum/eth/ethconfig"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/metrics"
-	"github.com/ethereum/go-ethereum/node"
-	"github.com/ethereum/go-ethereum/params"
+	"github.com/qtumproject/go-ethereum/accounts/external"
+	"github.com/qtumproject/go-ethereum/accounts/keystore"
+	"github.com/qtumproject/go-ethereum/accounts/scwallet"
+	"github.com/qtumproject/go-ethereum/accounts/usbwallet"
+	"github.com/qtumproject/go-ethereum/cmd/utils"
+	"github.com/qtumproject/go-ethereum/eth/ethconfig"
+	"github.com/qtumproject/go-ethereum/internal/ethapi"
+	"github.com/qtumproject/go-ethereum/log"
+	"github.com/qtumproject/go-ethereum/metrics"
+	"github.com/qtumproject/go-ethereum/node"
+	"github.com/qtumproject/go-ethereum/params"
 	"github.com/naoina/toml"
 )
 

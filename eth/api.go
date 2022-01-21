@@ -28,17 +28,17 @@ import (
 	"strings"
 	"time"
 
-	"github.com/ethereum/go-ethereum/common"
-	"github.com/ethereum/go-ethereum/common/hexutil"
-	"github.com/ethereum/go-ethereum/core"
-	"github.com/ethereum/go-ethereum/core/rawdb"
-	"github.com/ethereum/go-ethereum/core/state"
-	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/ethereum/go-ethereum/internal/ethapi"
-	"github.com/ethereum/go-ethereum/log"
-	"github.com/ethereum/go-ethereum/rlp"
-	"github.com/ethereum/go-ethereum/rpc"
-	"github.com/ethereum/go-ethereum/trie"
+	"github.com/qtumproject/go-ethereum/common"
+	"github.com/qtumproject/go-ethereum/common/hexutil"
+	"github.com/qtumproject/go-ethereum/core"
+	"github.com/qtumproject/go-ethereum/core/rawdb"
+	"github.com/qtumproject/go-ethereum/core/state"
+	"github.com/qtumproject/go-ethereum/core/types"
+	"github.com/qtumproject/go-ethereum/internal/ethapi"
+	"github.com/qtumproject/go-ethereum/log"
+	"github.com/qtumproject/go-ethereum/rlp"
+	"github.com/qtumproject/go-ethereum/rpc"
+	"github.com/qtumproject/go-ethereum/trie"
 )
 
 // PublicEthereumAPI provides an API to access Ethereum full node-related
